@@ -6,7 +6,7 @@ public class Test {
 		System.out.println("commu");
 		Maths maths = new Maths();
 		boolean tf = true;
-		for (double j = 1; j <= 101; j++) {
+		for (double j = 1; j <= 10000000; j++) {
 			double k = j + 1;
 			double a1;
 			double a2;
