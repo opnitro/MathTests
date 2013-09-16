@@ -18,7 +18,7 @@ public class Main {
 				break;
 			} else if (input.equals("2")) {
 				test.asso();
-				break;
+				System.out.println("Feature Not Implemented");
 			} else if (input.equals("3")) {
 				System.out.println("Bye");
 				break;
