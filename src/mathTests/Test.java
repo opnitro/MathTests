@@ -6,7 +6,7 @@ public class Test {
 		System.out.println("commu");
 		Maths maths = new Maths();
 		boolean tf = true;
-		for (double j = 1; j <= 10000000; j++) {
+		for (double j = 1; j <= 10000; j++) {
 			double k = j + 1;
 			double a1;
 			double a2;
@@ -43,5 +43,25 @@ public class Test {
 
 	public void asso() {
 		System.out.println("asso");
+		Maths maths = new Maths();
+		boolean tf = true;
+		for(double j = 0;j <= 10000; j++){
+			double k = j + 1;
+			double l = j + 2;
+			double a = maths.rectangize(k,l);
+			double b = maths.rectangize(j, a);
+			double c = maths.rectangize(j, k);
+			double d = maths.rectangize(c, l);
+			if(d!=a){
+				tf = false;
+				System.out.println("FALSE");
+			}else{
+				System.out.println("TRUE");
+			}
+			
+			
+		}
+		System.out.println("Done!");
+		System.out.println("Final result is: "+tf);
 	}
 }
